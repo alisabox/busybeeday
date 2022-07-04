@@ -16,6 +16,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { PostComponent } from './post/post.component';
+import { LogoSvgComponent } from './shared/logo-svg/logo-svg.component';
+import { LoginSvgComponent } from './shared/login-svg/login-svg.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -26,10 +29,25 @@ const routes: Routes = [
     path: 'posts',
     component: PostListComponent,
   },
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
 ];
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent, HomePageComponent, PostListComponent, HeaderComponent, FooterComponent, PostComponent],
+  declarations: [
+    AppComponent,
+    NxWelcomeComponent,
+    HomePageComponent,
+    PostListComponent,
+    HeaderComponent,
+    FooterComponent,
+    PostComponent,
+    LogoSvgComponent,
+    LoginSvgComponent,
+    LoginComponent,
+  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
@@ -44,4 +62,4 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

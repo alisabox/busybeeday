@@ -1,3 +1,13 @@
-.spacer {
-  flex: 1 1 auto;
+mat-toolbar {
+  background: white;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.09);
+}
+
+.header-logo {
+  margin: 0 auto;
+}
+
+.header-login {
+  position: absolute;
+  right: 50px;
 }

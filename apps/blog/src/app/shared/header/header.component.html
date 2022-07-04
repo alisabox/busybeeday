@@ -1,7 +1,10 @@
-<mat-toolbar color="primary">
-  <span>BusyBeeDay</span>
-  <span class="spacer"></span>
-  <button mat-icon-button aria-label="Вход">
-    <mat-icon>home</mat-icon>
+<mat-toolbar>
+  <a class="header-logo" [routerLink]="['/']">
+    <ngblog-logo-svg></ngblog-logo-svg>
+  </a>
+  <button class="header-login" mat-icon-button aria-label="Вход">
+    <a [routerLink]="['/login']">
+      <ngblog-login-svg></ngblog-login-svg>
+    </a>
   </button>
 </mat-toolbar>
