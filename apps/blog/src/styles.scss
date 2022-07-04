@@ -1,7 +1,14 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 ngblog-root {
   display: flex;
@@ -19,8 +26,6 @@ ngblog-header {
 
 ngblog-home-page {
   flex-grow: 1;
-  width: calc(100% - 341px);
-  max-width: 1200px;
+  width: 100%;
   margin: 64px auto 0;
-  padding: 20px 50px;
 }
