@@ -1,0 +1,13 @@
+@import './../../../styles.scss';
+
+svg {
+  width: 215px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
+}
