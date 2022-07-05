@@ -2,9 +2,7 @@
   <a class="header-logo" [routerLink]="['/']">
     <ngblog-logo-svg></ngblog-logo-svg>
   </a>
-  <button class="header-login" mat-icon-button aria-label="Вход">
-    <a [routerLink]="['/login']">
-      <ngblog-login-svg></ngblog-login-svg>
-    </a>
-  </button>
+  <a class="header-login" aria-label="Вход" [routerLink]="['/login']">
+    <ngblog-login-svg></ngblog-login-svg>
+  </a>
 </mat-toolbar>
