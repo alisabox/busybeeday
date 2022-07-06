@@ -1,0 +1,27 @@
+@import './../../../styles.scss';
+
+.footer {
+  height: 100%;
+}
+
+.footer-wrapper {
+  max-width: 960px;
+  padding: 5px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    top: 200px;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  a {
+    color: inherit;
+  }
+}
