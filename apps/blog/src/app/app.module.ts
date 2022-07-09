@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -14,10 +15,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { PostComponent } from './post/post.component';
 import { LogoSvgComponent } from './shared/logo-svg/logo-svg.component';
 import { LoginSvgComponent } from './shared/login-svg/login-svg.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
 
 const routes: Routes = [
   {
@@ -45,6 +49,7 @@ const routes: Routes = [
     LogoSvgComponent,
     LoginSvgComponent,
     LoginComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +61,10 @@ const routes: Routes = [
     MatButtonModule,
     MatGridListModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

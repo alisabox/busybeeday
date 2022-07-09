@@ -1,0 +1,28 @@
+@import './../../../styles.scss';
+
+.sidebar {
+  display: grid;
+  row-gap: 40px;
+}
+
+.sidebar__element {
+  padding: 20px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.sidebar__search-label {
+  display: none;
+}
+
+.sidebar__search-input {
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 0px;
+  float: left;
+  background: #343434;
+  color: #FFFFFF;
+  border: none;
+}
+
+.sidebar__search-submit {}
