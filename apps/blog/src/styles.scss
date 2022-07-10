@@ -29,7 +29,10 @@ ngblog-header {
 }
 
 ngblog-home-page,
-ngblog-login {
+ngblog-login,
+ngblog-post-list,
+ngblog-post-details,
+ngblog-page-not-found {
   flex-grow: 1;
   width: 100%;
   margin: 56px auto 0;
