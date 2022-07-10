@@ -2,7 +2,7 @@
 
 .sidebar {
   display: grid;
-  row-gap: 40px;
+  row-gap: 20px;
 }
 
 .sidebar__element {
@@ -10,19 +10,36 @@
   box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
-.sidebar__search-label {
-  display: none;
+.sidebar__search {
+  form {
+    position: relative;
+  }
+
+  mat-form-field {
+    width: 85%;
+  }
+
+  button {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
 }
 
-.sidebar__search-input {
-  padding: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-right: 0px;
-  float: left;
-  background: #343434;
-  color: #FFFFFF;
-  border: none;
+.sidebar__posts-item {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
-.sidebar__search-submit {}
+mat-list-item .sidebar__posts-avatar {
+  width: 70px;
+  height: 70px;
+}

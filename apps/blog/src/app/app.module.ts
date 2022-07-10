@@ -17,6 +17,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
 import { PostComponent } from './post/post.component';
 import { LogoSvgComponent } from './shared/logo-svg/logo-svg.component';
 import { LoginSvgComponent } from './shared/login-svg/login-svg.component';
@@ -63,6 +64,7 @@ const routes: Routes = [
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatListModule,
     FormsModule,
     ReactiveFormsModule,
   ],
