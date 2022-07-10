@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-
-interface Post {
-  title: string,
-  image: string,
-  date: string,
-}
+import { Post } from '../post/post.component';
+import * as postsData from './../../../assets/posts.json';
 
 @Component({
   selector: 'ngblog-sidebar',
@@ -19,18 +15,7 @@ export class SidebarComponent {
   });
 
   public categories: string[] = ['Общее', 'Курсы', 'Кредиты'];
-  public posts: Post[] = [
-    {
-      title: "The Lighthouse Effect",
-      image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      date: "November 02, 2013",
-    },
-    {
-      title: "The Lighthouse Effect",
-      image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      date: "November 02, 2013",
-    },
-  ];
+  public posts: Post[] = Array.from(postsData).sort((a, b) => b.id - a.id);
 
   constructor(
     private formBuilder: FormBuilder

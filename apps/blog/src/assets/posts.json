@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "О блоге",
+    "date": "10 июля 2022",
+    "teaser": "Эта книга адресована всем, кто изучает русский язык. Но состоит она не из правил, упражнений и учебных текстов. Для этого созданы другие замечательные учебники. У этой книги совсем иная задача. Она поможет вам научиться не только разговаривать, но и размышлять по-русски.",
+    "text": "<p>Эта книга адресована всем, кто изучает русский язык. Но состоит она не из правил, упражнений и учебных текстов. Для этого созданы другие замечательные учебники. У этой книги совсем иная задача. Она поможет вам научиться не только разговаривать, но и размышлять по-русски.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu placerat lacus, pellentesque tincidunt felis. Aliquam dictum cursus elit, et sagittis nibh tincidunt quis. Vestibulum leo dui, ullamcorper quis erat nec, accumsan imperdiet ligula. Maecenas ut dui sed arcu sodales consequat. Nulla et est ac lacus congue volutpat. Aliquam vehicula tincidunt sem eget cursus. Nam sed mollis diam. Pellentesque id felis ut diam dignissim egestas id non ipsum. Ut id magna eu eros vehicula sollicitudin at et odio. Mauris consectetur tortor in mauris aliquet feugiat. Etiam et elit arcu. Donec quis ante odio. Duis eros mauris, blandit eu tempor at, vulputate vel libero. Ut convallis metus ut magna accumsan, id consectetur metus laoreet. Sed in dolor non erat vulputate venenatis et venenatis elit. Aenean arcu turpis, aliquam non dictum sed, vehicula sed ligula. Praesent consequat eleifend ligula et faucibus. Vivamus id odio et lectus pretium mollis. Phasellus venenatis laoreet est, non dictum nisi porta eu. Integer auctor, mauris vel consequat viverra, nibh arcu elementum odio, ut varius arcu sapien vitae ligula. Fusce erat metus, cursus nec felis eget, vulputate vulputate turpis. Nulla iaculis venenatis magna, lobortis egestas magna faucibus mollis. Quisque molestie turpis dolor, blandit convallis elit pellentesque eu. Nam sit amet enim a est congue vestibulum eget id leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus sit amet ipsum eros. Etiam faucibus sapien turpis, vitae sagittis tellus faucibus quis.</p>",
+    "comments": [],
+    "category": "Общее",
+    "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "Об университете UoPeople",
+    "date": "11 июля 2022",
+    "teaser": "Эта книга адресована всем, кто изучает русский язык. Но состоит она не из правил, упражнений и учебных текстов. Для этого созданы другие замечательные учебники. У этой книги совсем иная задача. Она поможет вам научиться не только разговаривать, но и размышлять по-русски.",
+    "text": "<p>Эта книга адресована всем, кто изучает русский язык. Но состоит она не из правил, упражнений и учебных текстов. Для этого созданы другие замечательные учебники. У этой книги совсем иная задача. Она поможет вам научиться не только разговаривать, но и размышлять по-русски.</p>",
+    "comments": [],
+    "category": "Общее",
+    "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+  }
+]

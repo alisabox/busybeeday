@@ -18,11 +18,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { PostComponent } from './post/post.component';
+import { PostComponent } from './pages/post/post.component';
 import { LogoSvgComponent } from './shared/logo-svg/logo-svg.component';
 import { LoginSvgComponent } from './shared/login-svg/login-svg.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { PostDetailsComponent } from './pages/post-details/post-details.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -34,8 +36,16 @@ const routes: Routes = [
     component: PostListComponent,
   },
   {
+    path: 'posts/:id',
+    component: PostDetailsComponent,
+  },
+  {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   },
 ];
 
@@ -51,10 +61,12 @@ const routes: Routes = [
     LoginSvgComponent,
     LoginComponent,
     SidebarComponent,
+    PostDetailsComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
     BrowserAnimationsModule,
     MatToolbarModule,
     CdkMenuModule,

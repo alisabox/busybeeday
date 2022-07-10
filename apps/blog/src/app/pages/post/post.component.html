@@ -1,0 +1,28 @@
+<mat-card class="post">
+  <mat-card-header>
+    <mat-card-title class="post__title">{{ post.title }}</mat-card-title>
+    <mat-card-subtitle class="post__subtitle">
+      <div>
+        <mat-icon>today</mat-icon>
+        <span>{{ post.date }}</span>
+      </div>
+      <div>
+        <mat-icon>link</mat-icon>
+        <span>{{ post.category }}</span>
+      </div>
+      <div>
+        <mat-icon>chat_bubble_outline</mat-icon>
+        <span *ngIf="!post.comments.length">Нет комментариев</span>
+        <span *ngIf="post.comments.length">{{ post.comments.length }} комментариев</span>
+      </div>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{ post.image }}" alt="Photo of a Shiba Inu" />
+  <mat-card-content *ngIf="!postDetails">
+    <p>{{ post.teaser }}</p>
+  </mat-card-content>
+  <mat-card-content *ngIf="postDetails">{{ post.text }}</mat-card-content>
+  <mat-card-actions *ngIf="!postDetails">
+    <a [routerLink]="['/posts', post.id]" mat-button>ЧИТАТЬ</a>
+  </mat-card-actions>
+</mat-card>

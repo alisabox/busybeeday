@@ -1,11 +1,11 @@
 <div class="main">
   <section class="main-image-section">
     <h2 class="main-image-section__text">Computer Science в University of the People</h2>
-    <img class="main-image-section__image" src="./../../../assets/main-image.jpg" alt="text" />
+    <img class="main-image-section__image" src="./../../../assets/images/main-image.jpg" alt="text" />
   </section>
   <section class="main-post-section">
     <div class="main-post-list">
-      <ngblog-post></ngblog-post>
+      <ngblog-post *ngFor="let post of posts" [postInput]="post"></ngblog-post>
     </div>
     <div class="main-post-search">
       <ngblog-sidebar></ngblog-sidebar>

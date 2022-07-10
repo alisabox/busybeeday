@@ -25,7 +25,7 @@
       <span>Последние публикации</span>
     </mat-toolbar>
     <mat-list>
-      <a class="sidebar__posts-item" routerLink="#" *ngFor="let post of posts">
+      <a class="sidebar__posts-item" [routerLink]="['/posts', post.id]" *ngFor="let post of posts">
         <mat-list-item>
           <img class="sidebar__posts-avatar" src="{{ post.image }}" matListAvatar alt="" />
           <h3 matLine>{{ post.title }}</h3>
